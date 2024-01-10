@@ -5,22 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maintenance Mode</title>
     <style>
-        body {
+        body, html {
+            height: 100%;
+            margin: 0;
             font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             background-color: #f4f4f4;
+            text-align: center;
         }
+
         .container {
             max-width: 600px;
-            margin: 0 auto;
-            background: #fff;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
         }
+
+        .container:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
         h1 {
             color: #333;
+            margin-bottom: 20px;
+            transition: color 0.5s ease;
         }
+
+        h1:hover {
+            color: #007bff;
+        }
+
         p {
             color: #666;
         }
@@ -28,9 +46,8 @@
 </head>
 <body>
     <div class="container">
-        <h1>We'll be back soon!</h1>
-        <p>Sorry for the inconvenience but we're performing some maintenance at the moment. We'll be back online shortly!</p>
-        <!-- You can add more details here such as expected time of completion, contact information, etc. -->
+        <h1>We'll Be Right Back!</h1>
+        <p>Our website is currently undergoing scheduled maintenance. We should be back shortly. Thank you for your patience!</p>
     </div>
 </body>
 </html>
