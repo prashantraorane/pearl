@@ -1,35 +1,60 @@
-/* styles.css */
-body, html {
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+}
+
+header {
+    background: linear-gradient(#caf0f8, #90e0ef);
 }
 
 nav ul {
     list-style-type: none;
+    margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 20px;
+    float: left;
 }
 
-.hero {
-    background: linear-gradient(120deg, blue, purple);
+nav ul li a {
+    display: block;
+    color: #0077b6;
     text-align: center;
-    color: white;
-    padding: 100px 0;
-}
-
-.button {
-    background: white;
-    color: blue;
-    padding: 10px 20px;
+    padding: 14px 16px;
     text-decoration: none;
-    border-radius: 5px;
-    display: inline-block;
-    margin-top: 20px;
 }
 
-/* Add additional styles for responsiveness and interactivity */
+nav ul li a:hover {
+    background-color: #00b4d8;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+}
+
+#about {
+    background-color: #caf0f8;
+}
+
+#products {
+    background-color: #fff;
+}
+
+#contact {
+    background-color: #0077b6;
+    color: #fff;
+}
+
+footer {
+    background-color: #0077b6;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
