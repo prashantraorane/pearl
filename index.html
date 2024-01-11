@@ -1,31 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>ford</title>
-    <!-- Add link to CSS file -->
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Static Page with Tabs</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+  .tab-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  .tab-menu li {
+    float: left;
+  }
+  .tab-menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  .tab-menu li a:hover {
+    background-color: #111;
+  }
+  .content {
+    padding: 20px;
+    margin-top: 30px;
+  }
+</style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#services">SERVICES</a></li>
-                <li><a href="#specialisations">SPECIALISATIONS</a></li>
-                <li><a href="#case-studies">CASE STUDIES</a></li>
-                <li><a href="#insights">INSIGHTS</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="hero">
-            <h1>STOP SEARCHING START GROWING.</h1>
-            <a href="#get-started" class="button">GET STARTED</a>
-        </section>
-    </main>
-    <!-- Add link to JavaScript file -->
-    <script src="scripts.js"></script>
+
+<ul class="tab-menu">
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+  <li><a href="#blog">Blog</a></li>
+</ul>
+
+<div class="content">
+  <h2>Welcome to My Website</h2>
+  <p>This is a simple static page with tabs similar to a WordPress site.</p>
+</div>
+
 </body>
 </html>
